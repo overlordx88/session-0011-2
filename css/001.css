@@ -1,0 +1,36 @@
+*{
+margin: 0;
+border: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+background-color: lightpink;
+}
+#content{
+max-width: 960px;
+margin: 0 auto;
+/* margin: 10px 50px 10px 50px; */
+z-index:1;
+}
+.small{
+/* position: relative; */
+z-index:2;
+/* padding: 2px; */
+display:block;
+}
+.big{
+position: absolute;
+display:none;
+z-index:5;
+}
+img{
+float: right;
+padding: 20px;
+}
+.small:hover .big{
+display:block;
+z-index:10;
+transition:all 3s linear; 
+cursor:pointer;
+}
